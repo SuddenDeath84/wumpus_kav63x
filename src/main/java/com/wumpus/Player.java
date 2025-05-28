@@ -8,10 +8,10 @@ public class Player {
 
     public void move(int direction) {
         switch (direction) {
-            case 0 -> x++;
-            case 1 -> x--;
-            case 2 -> y++;
-            case 3 -> y--;
+            case 0 -> x++; // jobbra
+            case 1 -> x--; // balra
+            case 2 -> y--; // fel
+            case 3 -> y++; //le
         }
         x = Math.max(0, Math.min(3, x));
         y = Math.max(0, Math.min(3, y));
